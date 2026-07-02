@@ -23,7 +23,7 @@ The project addresses the inherent challenges of using a pure MLP for image data
 
 ## Dataset
 
-* **Source:** `briscdataset/brisc2025` (Automatically downloaded via `kagglehub`).
+* **Source:** [`briscdataset/brisc2025`](https://www.kaggle.com/datasets/briscdataset/brisc2025) (Automatically downloaded via `kagglehub`).
 * **Total Images:** * Training Set (Post-Augmentation): ~5,000 images
   * Test Set: 1,000 images (Test 1) and 1,225 images (Test 2)
 * **Classes (4 Categories):** Glioma, Meningioma, No Tumor, Pituitary

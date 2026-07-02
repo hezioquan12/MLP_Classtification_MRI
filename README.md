@@ -40,7 +40,7 @@ The project addresses the inherent challenges of using a pure MLP for image data
 ---
 
 ##  Visual Results
-*(Once training is complete, save your plot and confusion matrix images to your repository directory and update the links below)*
+
 
 ### Loss & Accuracy Curves across Epochs
 <img width="1489" height="490" alt="download" src="https://github.com/user-attachments/assets/2c5c5ea4-a154-482f-a73b-c62ada27b820" />

@@ -13,6 +13,7 @@ The project addresses the inherent challenges of using a pure MLP for image data
 1. **Auto-Cropping (Noise Reduction):** Implements a custom transform algorithm `CropBlackBorders` with a `threshold=0.15`. This algorithm automatically detects the brain tissue region, crops out the uninformative black background surrounding the skull, and resizes the image to a standardized `128x128` resolution. This significantly minimizes "dead signals" feeding into the input layer.
 <img width="1328" height="299" alt="download" src="https://github.com/user-attachments/assets/b226a745-1dc7-46d3-aa4f-2dd33b317b8b" />
 <img width="1327" height="299" alt="download" src="https://github.com/user-attachments/assets/06f50f04-da8c-4dd0-9491-76b2d2e3488f" />
+
 2. **Handling Class Imbalance:** Integrates custom class weights (`WEIGHT_CLASS = [2.0, 2.0, 1.0, 1.0]`) directly into the `CrossEntropyLoss` function. This penalizes the model more heavily for misclassifying underrepresented or more challenging classes.
 3. **Stratified 5-Fold Cross Validation:** Replaces simple train/test splits with a Stratified K-Fold validation strategy (`N_SPLITS = 5`) to ensure a consistent and balanced distribution of class labels across all folds, guaranteeing evaluation stability.
 4. **Robust Data Augmentation:** Applies `RandomRotation (20°)`, `ColorJitter (0.3)`, and `RandomHorizontalFlip` to enhance data diversity and prevent the MLP from overfitting or memorizing pixel positions.
